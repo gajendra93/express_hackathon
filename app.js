@@ -10,6 +10,8 @@ app.use('/api2', api2);
 
 app.use('/api3', api3);
 
+app.use('/api4', api4);
+
 app.listen(3000, function() {
 	console.log('Server started: Listening at port 3000')
 })
