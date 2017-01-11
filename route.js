@@ -1,4 +1,6 @@
 var express = require('express');
+var operations = require('./operations');
+
 var route = express.Router();
 
 route.get('/employee', function(req, res) {
@@ -10,7 +12,8 @@ route.get('/department', function(req, res) {
 })
 
 route.get('/employee/name/:name', function(req, res) {
-	res.send('Filter');
+	var data = operations.getEmployee(req.params.name);
+	res.send(data);
 })
 
 route.get('/storedata', function(req, res) {
