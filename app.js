@@ -11,8 +11,8 @@ db.connect('mongodb://127.0.0.1:27017/hackathon', function(err) {
 	}
 	else {
 		console.log("Connected to Database");
-		app.listen(3000, function() {
-			console.log('Server started: Listening at port 3000')
+		app.listen(8080, function() {
+			console.log('Server started: Listening at port 8080')
 		})
 	}
 });
