@@ -1,3 +1,6 @@
+/* module to 
+to connect, get and close database connection
+*/
 var MongoClient = require('mongodb').MongoClient;
 
 var state = {
